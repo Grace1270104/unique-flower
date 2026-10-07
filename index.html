@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unique Flower Shop</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fffaf0; }
+    h1 { text-align: center; color: #d6336c; }
+    .shop { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .flower { border: 1px solid #ddd; border-radius: 8px; padding: 15px; width: 200px; text-align: center; background: #fff; }
+    .price { color: #2a9d8f; font-weight: bold; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>🌸 Welcome to Unique Flower Shop 🌸</h1>
+  <div class="shop">
+    <div class="flower">
+      <h2>Red Rose</h2>
+      <p class="price">$5 per stem</p>
+      <form action="save.php" method="post">
+        <input type="hidden" name="flower" value="Red Rose">
+        <input type="number" name="quantity" placeholder="Qty" required>
+        <button type="submit">Buy Now</button>
+      </form>
+    </div>
+    <div class="flower">
+      <h2>Tulip</h2>
+      <p class="price">$3 per stem</p>
+      <form action="save.php" method="post">
+        <input type="hidden" name="flower" value="Tulip">
+        <input type="number" name="quantity" placeholder="Qty" required>
+        <button type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
